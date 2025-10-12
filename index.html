@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alps Ski Resort</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div id="heading">
+            <img src="src/images/mountain_logo.png" alt="mountain_logo" id="logo">
+            <h1>ALPS SKI RESORT</h1>
+        </div>
+        <button class="ham-btn"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Map</a>
+            <a href="#">Passes</a>
+            <a href="#">Gallery</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <picture id="hero-image">
+            <source srcset="src/images/hero.webp" media="(min-width: 768px)">
+            <source srcset="src/images/hero-mobile.webp" media="(max-width: 768px)" width="100%">
+            <img src="src/images/hero.webp" alt="Resort Hero">
+        </picture>
+        <div id="home-grid">
+            <section id="action" class="home-section">
+                <h2>YOUR JOURNEY STARTS NOW</h2>
+                <p>Interested in cruising down the mountain with us this year?</p>
+                <p>Check out our passes for the 2026 season.</p>
+                <a href="#">SEE PASSES</a>
+            </section>
+            <img src="src/images/skier.jpg">
+            <section id="events" class="home-section">
+                <h2>EXCITING EVENTS</h2>
+                <ul>
+                    <li>Christmas Dancing and hot chocolate - 12/14</li>
+                    <li>Pups in parks, bring your dogs to a fenced off park for play - 12/22</li>
+                    <li>Christmas tree lighting - 12/23</li>
+                    <li>Professional half pipe - 1/14</li>
+                    <li>Ice skating at bottom of resort - 1/24</li>
+                    <li>Dinner on us, don't even think about packing a meal because we got you! - 2/12</li>
+                    <li>Ski with a friend for free - 3/12</li>
+                    <li>Last ride send off - 4/29</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

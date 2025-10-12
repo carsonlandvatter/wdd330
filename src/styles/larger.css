@@ -1,0 +1,79 @@
+@media only screen and (min-width: 768px) {
+    .ham-btn {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        margin-right: 30px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        border-bottom: none;
+        font-size: 1.25rem;
+    }
+
+    nav a:hover {
+        color: #ddd;
+    }
+
+    #heading {
+        margin-left: 15px;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #logo {
+        width: 75px;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /*********HOME GRID*************/
+    #home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /*********CALL TO ACTION*************/
+    #action {
+        display: flex;
+        width: 642px;
+        margin: 80px 122px 80px 122px;
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 30px;
+        grid-column: 1 / 2;
+    }
+
+    #home-grid img {
+        width: 334px;
+        height: 334px;
+        aspect-ratio: 1/1;
+        grid-column: 2 / 3;
+        margin: 100px 122px 80px 0;
+        border-radius: 50%;
+    }
+
+    /*********EXCITING EVENTS*************/
+    #events {
+        padding: 40px;
+        margin: 40px 122px 80px 122px;
+        grid-column: 1 / 3;
+    }
+}

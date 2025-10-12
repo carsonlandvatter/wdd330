@@ -1,0 +1,128 @@
+:root {
+    --primary-color: #14213D;
+    --background-color: #E5E5E5;
+    --accent-color: #FCA311;
+}
+
+body {
+    font-family: Aldrich;
+    margin: 0;
+    background-color: var(--background-color);
+    padding: 0;
+}
+
+/*********HEADER*************/
+
+header {
+    background: var(--primary-color);
+}
+
+#heading {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 24px;
+    line-height: normal;
+    padding-top: 5px;
+}
+
+#logo {
+    width: 40px;
+    display: block;
+}
+
+/*********NAVIGATION*************/
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.ham-btn::before {
+    content: '☰';
+    color: white;
+}
+
+.ham-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 44px;
+}
+
+.active::before {
+    content: 'ⓧ';
+}
+
+/*********HERO*************/
+
+#hero-image {
+    margin: 0;
+}
+
+#hero-image img {
+    margin: 0;
+    display: block;
+}
+
+/*********CALL TO ACTION*************/
+#action, .home-section {
+    display: flex;
+    margin: 20px;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #FFF;
+    line-height: 30px;
+}
+
+#action a {
+    border-radius: 20px;
+    border: 4px solid var(--accent-color);
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 20px 80px;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/*********HOME GRID*************/
+
+#home-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+#home-grid img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
