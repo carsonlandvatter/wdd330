@@ -154,7 +154,12 @@ nav a {
 
  /*********Snow Animation*************/
 
+ .snow {
+    display: none;
+ }
+
  .snow-falling {
+    display: block;
     position: fixed; 
     top: 0;
     left: 0;
@@ -246,4 +251,31 @@ nav a {
     animation-delay: 2s;
     font-size: 1.5rem;
     opacity: 0.6;
+ }
+
+  /*********Snow Button*************/
+#snowBtn {
+    background: none;
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-family: Aldrich;
+    line-height: 20px;
+    border: none;
+    padding: 15px;
+}
+
+#snowBtn:hover {
+    color: #14213da6;
+}
+
+ /*********Weather Cards*************/
+
+ .weatherCards {
+    background-color: white;
+    margin: 30px;
+    height: 100%;
+    padding: 30px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 15px;
  }
