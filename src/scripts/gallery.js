@@ -6,7 +6,7 @@ export default function consoleLogPexels() {
 
     if (gallery) {
     //1. fetch the url we are going to get our data from
-    fetch(`${apiUrl}/search?query=ski&per_page=10`, {
+    fetch(`${apiUrl}/search?query=ski&per_page=15`, {
         headers: {
             Authorization: apiKey,
         },

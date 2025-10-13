@@ -141,3 +141,8 @@ nav a {
     background-color: white;
     border-radius: 15px;
 }
+
+/*********Attribution*************/
+ #attribution {
+    margin-left: 40px;
+ }
