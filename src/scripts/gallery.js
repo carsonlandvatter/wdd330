@@ -20,7 +20,7 @@ export default function consoleLogPexels() {
                 const img = document.createElement('img');
                 
                 img.src = photo.src.medium;
-                img.alt = photo.photographer;
+                img.alt = photo.alt;
                 gallery.appendChild(img);
             })
         })
