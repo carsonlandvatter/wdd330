@@ -13,7 +13,7 @@ body {
 
 /*********HEADER*************/
 
-header {
+header, footer {
     background: var(--primary-color);
 }
 
@@ -99,7 +99,7 @@ nav a {
     line-height: 30px;
 }
 
-#action a {
+#action a, #season-pass button, #day-pass button, #night-pass button {
     border-radius: 20px;
     border: 4px solid var(--accent-color);
     background: #FFF;
@@ -110,6 +110,7 @@ nav a {
     align-items: center;
     color: var(--accent-color);
     text-decoration: none;
+    font-family: Aldrich;
 }
 
 /*********HOME GRID*************/
@@ -127,7 +128,7 @@ nav a {
     aspect-ratio: 1/1;
 }
 
-#action a:hover {
+#action a:hover, #season-pass button:hover, #day-pass button:hover, #night-pass button:hover, #empty:hover, #purchase:hover {
     background-color: #eee
 }
 
@@ -279,3 +280,83 @@ nav a {
     text-align: center;
     border-radius: 15px;
  }
+
+  /*********Adding passes*************/
+
+  #season-pass, #day-pass, #night-pass {
+    margin: 15px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+
+    p {
+        line-height: 30px;
+    }
+
+    h2 {
+        margin: 0;
+        line-height: normal;
+    }
+  }
+
+  #season-pass, #day-pass, #night-pass  {
+    animation: passes 3s ease 0s 1 normal;
+  }
+
+  @keyframes passes {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+  }
+
+  /*********Cart*************/
+
+  #cart-container {
+    background-color: white;
+    padding: 30px;
+    margin: 15px;
+    margin-top: 175px;
+    margin-bottom: 175px;
+    border-radius: 15px;
+  }
+
+  #empty {
+    border: 4px solid red;
+    color: red;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 20px 80px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Aldrich;
+  }
+
+  #purchase {
+    border: 4px solid green;
+    color: green;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 20px 80px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Aldrich;
+  }
+
+  footer {
+    color: white;
+    padding: 30px;
+  }
+  
