@@ -7,7 +7,8 @@ export default defineConfig({
                 main: 'index.html',
                 gallery: 'gallery.html',
                 weather: 'weather.html',
-                passes: 'passes.html'
+                passes: 'passes.html',
+                cart: 'cart.html'
             },
         },
     },
