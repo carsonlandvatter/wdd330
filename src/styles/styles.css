@@ -4,7 +4,13 @@
     --accent-color: #FCA311;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Aldrich;
     margin: 0;
     background-color: var(--background-color);
@@ -75,7 +81,9 @@ nav a {
 }
 
 /*********HERO*************/
-
+main {
+    flex-grow: 1;
+}
 #hero-image {
     margin: 0;
 }
@@ -173,7 +181,7 @@ nav a {
 
  .snowflake {
     position: absolute;
-    top: -250px;
+    top: -30px;
     font-size: 1rem;
     opacity: 0.8;
     animation: fall 8s linear infinite;
@@ -201,7 +209,7 @@ nav a {
  .snowflake:nth-child(2) {
     left: 15%;
     animation-duration: 7s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     font-size: 1rem;
     opacity: 0.8;
  }
