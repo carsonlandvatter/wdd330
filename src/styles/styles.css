@@ -320,6 +320,10 @@ main {
     }
   }
 
+  .add-msg {
+    color: green;
+  }
+
   /*********Cart*************/
 
   #cart-container {
@@ -361,6 +365,10 @@ main {
     align-items: center;
     text-decoration: none;
     font-family: Aldrich;
+  }
+
+  #purchase-msg {
+    color: green;
   }
 
   footer {
